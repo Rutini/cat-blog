@@ -1,0 +1,20 @@
+---
+permalink: /
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Cat Blog</h1>
+<h2>Breeds list:</h2>
+<ul>
+    {% for breed in cats %}
+    <li><a href="/cats/{{ breed.id }}">{{ breed.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
